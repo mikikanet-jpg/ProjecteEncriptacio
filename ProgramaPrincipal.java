@@ -2,20 +2,16 @@ import java.util.Scanner;
 
 public class ProgramaPrincipal {
 
-    // Scanner para poder escribir datos por el teclado
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
-        // Pedimos el mensaje que queremos encriptar
         System.out.print("Introdueix el missatge: ");
         String missatge = scanner.nextLine();
 
-        // Pedimos la clave que utilizaremos para encriptar
         System.out.print("Introdueix la clau: ");
         String clau = scanner.nextLine();
 
-        // Comprobamos que la clave no esté vacía
         if (clau.isEmpty()) {
             System.out.println("ERROR: La clau no pot estar buida.");
             return;
